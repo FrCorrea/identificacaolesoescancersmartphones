@@ -7,7 +7,7 @@ from keras.models import load_model
 import base64
 from io import BytesIO
 
-application = Flask(__name__)
+app = Flask(__name__)
 
 # Definição do caminho do modelo
 MODEL_PATH = "cenario2_mobv2.h5"
@@ -40,7 +40,7 @@ class ImageService:
         return predictions.flatten()
 
 class ImageController:
-    @application.route('/enviar-imagem', methods=['POST'])
+    @app.route('/enviar-imagem', methods=['POST'])
     def enviar_imagem():
         img_base64 = request.json.get('imagem')
         if img_base64:
@@ -62,4 +62,4 @@ class ImageController:
             return jsonify({'erro': 'Nenhum dado de imagem encontrado na requisição'})
 
 if __name__ == '__main__':
-    application.run(host='0.0.0.0', port=5000, debug=True)
+    app.run()
