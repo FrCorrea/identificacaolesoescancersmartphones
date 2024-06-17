@@ -1,0 +1,20 @@
+API
+Requerimentos:
+  Python 3.12 ou superior
+  TensorFlow 2,16.1
+  Flask 3.0.3 ou superior
+  Keras versão 3.1
+
+Após isso só compilar o código, para subir em nuvem pode-se utilzar o Ngrok, mais sobre ele neste link: https://ngrok.com/
+
+Aplicação
+Requerimentos
+  NojeJS 
+  ReactNative
+  Expo
+
+Após instalação dos requerimentos, digite o comando "npm i" no terminal para instalar todos os packages necessários.
+
+Caso use o Ngrok, no arquivo XXX na linha XXX, altere para o endereço IP fornecido pelo serviço.
+
+Para buildar a aplicação utilze o comando: 
